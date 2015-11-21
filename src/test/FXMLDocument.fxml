@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.FXMLDocumentController">
+  <tabs>
+    <Tab text="Playlists">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <HBox BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField prefHeight="26.0" prefWidth="185.0" promptText="Enter Song Name" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="2.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#SearchButtonClicked" text="Search">
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="4.0" right="4.0" top="2.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </top>
+               <left>
+                  <ScrollPane prefHeight="338.0" prefWidth="136.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <VBox prefHeight="333.0" prefWidth="131.0">
+                           <children>
+                              <Label prefWidth="136.0" text="Top 8 Playlists">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <Label text="1.">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="rank1" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="8.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="36.0">
+                                 <children>
+                                    <Label text="2. ">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="rank2" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="36.0">
+                                 <children>
+                                    <Label text="3. ">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="rank3" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="36.0">
+                                 <children>
+                                    <Label text="4. ">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="rank4" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="36.0">
+                                 <children>
+                                    <Label text="5. ">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="rank5" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="36.0">
+                                 <children>
+                                    <Label text="6. ">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="rank6" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="65.0">
+                                 <children>
+                                    <Label text="7. ">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="rank7" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="86.0">
+                                 <children>
+                                    <Label text="8. ">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="rank8" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </left>
+            </BorderPane>
+         </content></Tab>
+    <Tab text="Add Playlist">
+         <content>
+            <ScrollPane>
+               <content>
+                  <VBox>
+                     <children>
+                        <Label text="Playlist Submission Form">
+                           <VBox.margin>
+                              <Insets left="10.0" right="300.0" top="12.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Playlist Popularity">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="15.0" top="16.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="playlistPopularity" promptText="e.g. 69">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label layoutX="20.0" layoutY="73.0" text="Songs In Playlist">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="15.0" top="16.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField layoutX="20.0" layoutY="116.0" promptText="e.g. 6, 9, 24, 420, 666, 1337, 9001">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#SubmitButtonClicked" text="Submit">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="16.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label text="Upload A Text File">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="100.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="fileUpload" promptText="e.g. /home/usr/desktop/example.txt">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#UploadButtonClicked" text="Upload">
+                           <VBox.margin>
+                              <Insets left="10.0" top="16.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </content></Tab>
+  </tabs>
+</TabPane>
